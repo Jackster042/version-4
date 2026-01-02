@@ -1,0 +1,38 @@
+# CodeRabbit Configuration File
+# Documentation: https://docs.coderabbit.ai/using-coderabbit/configuration-options
+
+language: "en-US"
+early_access: false
+
+reviews:
+  # Profile for the review. Options: "chill", "assertive", "stricter"
+  profile: "chill"
+  
+  # Whether to use the request changes workflow in GitHub
+  request_changes_workflow: false
+  
+  # specific instructions for the AI
+  instructions: |
+    - This project uses React 19, Vite, and TanStack Start (React Router).
+    - Focus on type safety and proper usage of TypeScript interfaces.
+    - Ensure components are functional and use hooks appropriately.
+    - Check for proper usage of TanStack Router's loader and search params.
+    - Provide constructive feedback that helps improve code quality and maintainability.
+    - Avoid nitpicking on formatting if Prettier/ESLint typically handles it.
+
+  # Automatic review settings
+  auto_review:
+    enabled: true
+    ignore_title_keywords:
+      - "WIP"
+      - "Do not merge"
+      - "Draft"
+    drafts: false
+
+  # Tools/Linters to run
+  tools:
+    ast-grep: true
+    turborepo: false # Set to true if this becomes a monorepo with Turbo
+
+chat:
+  auto_reply: true

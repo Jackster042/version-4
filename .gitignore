@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+
+# Build
+build
+
+# Vite
+.vite
+
+# TypeScript
+typegen.ts
+typegen.d.ts
+
+# EditorConfig
+.editorconfig
+
+# IDE
+.idea
+.vscode
+
+# Other
+.DS_Store
+Thumbs.db
+
+# TanStack Start
+.count.txt
+
+# Environment
+.env

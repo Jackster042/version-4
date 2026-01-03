@@ -8,7 +8,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "db:seed": "tsx src/db/seed.ts",
+    "test": "vitest",
+    "test:unit": "vitest run",
+    "test:unit:watch": "vitest run --watch"
   },
   "keywords": [],
   "author": "",
@@ -30,8 +33,10 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.2",
     "drizzle-kit": "^0.31.8",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vite": "^7.3.0",
-    "vite-tsconfig-paths": "^6.0.3"
+    "vite-tsconfig-paths": "^6.0.3",
+    "vitest": "^4.0.16"
   }
 }
